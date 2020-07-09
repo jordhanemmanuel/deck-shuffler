@@ -5,6 +5,8 @@ var deckPile1 = []
 var deckPile2 = []
 var deckDifference = 0
 
+//lmao
+
 const deckSplit = (deck) => {
         //corta o deck em 2 pilhas
         let halfValue = Math.floor(deck.length / 2)
