@@ -1,11 +1,17 @@
-const addCards = require('./utils/addCards')
-const e = require('express')
+const addCards = require('./src/utils/addCards')
+const express = require('express')
+
+const app = express();
+
+require('./src/routes/deckRoutes.js')(app);
+
+app.listen(8080);
+
+// TODO: Remover essas porras e jogar em arquivos de rota
 
 var deckPile1 = []
 var deckPile2 = []
 var deckDifference = 0
-
-//lmao
 
 const deckSplit = (deck) => {
         //corta o deck em 2 pilhas
